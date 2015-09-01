@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>Geolocation</title>
+    <style>
+      body{
+        background-color: lightGrey;
+      }
+      .wrap{
+        width: 60%;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 30px auto;
+        padding: 30px;
+      }
+      h1 {
+        text-align: center;
+      }
+      input, label {
+        display: block;
+      }
+      input{
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Show position</h1>
+      <form >
+        <input type="button" id="getLocationBtn" value="Get Location">
+
+        <label for="lat">Latitude:</label>
+        <input type="text" id="lat" name="lat">
+
+        <label for="lon">Longitude:</label>
+        <input type="text" id="lon" name="lon">
+
+        <label for="alt">Altitude:</label>
+        <input type="text" id="alt" name="alt">
+
+        <label for="acc">Accuracy:</label>
+        <input type="text" id="acc" name="acc">
+
+        <label for="altAcc">Altitude Accuracy:</label>
+        <input type="text" id="altAcc" name="altAcc">
+
+        <label for="head">Heading:</label>
+        <input type="text" id="head" name="head">
+
+        <label for="speed">Speed:</label>
+        <input type="text" id="speed" name="speed">
+
+        <label for="time">Timestamte:</label>
+        <input type="text" id="time" name="time">
+      </form>
+      <ul id="log">
+
+      </ul>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
